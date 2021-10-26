@@ -1,0 +1,62 @@
+﻿/*
+Create a HTML page and CSS file meeting the following requirements:
+1.	The page’s content should be put into a rectangle area, equidistant from both sides of the browser window
+    (the margins should be automatically resized depending on the size of the browser window).
+    The rectangle should have a different background color than the rest of the page
+
+2.	At the top of the page there should be a banner, also equidistant from both sides of the browser window.
+    The banner should have a border and be connected to the page content
+
+3.	The page content should contain several articles, each of them should:
+        a.	have a header, which uses non-standard font size and is underlined (without the use of the <u> tag) and has a left margin of arbitrary,
+            non-zero size
+        b.	the article should have a left margin of arbitrary, non-zero size, larger than the header’s margin
+        c.	have a border and a non-standard background color
+        d.	text should be equidistant from all of the border lines
+        e.	articles should contain links, which change color when mouse cursor hovers over them
+*/
+body{
+    background-color: antiquewhite;
+}
+.outerBox
+{
+	background-color: brown;
+	border: 6px solid #949599;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.banner
+{   
+    border: 3px double yellow;
+    border-radius: 8px;
+    width: 90%;
+    height:15%;
+    margin-left:5%;
+    margin-top: 1%;
+}
+
+.articles{
+    width: 92%;
+    margin: auto;
+}
+
+h2{
+    font-family: Arial, Helvtica, sans-serif;
+    font-size: 3em;
+    margin-left:2%;
+    text-decoration:underline;
+}
+
+p{  
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 4%;
+    background-color: pink;
+}
+
+a:hover{
+    text-decoration-color: white;
+}

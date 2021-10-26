@@ -1,0 +1,27 @@
+/*
+1.	Define font style and size for paragraphs and headers
+2.	Define style and color of table borders
+3.	Remove underlines from links
+4.	Change the style of markers for unordered lists
+*/
+h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50
+}
+h2, p, ol{
+    font-family: arial, sans-serif;
+}
+
+table, th, td{
+    border: 2px solid orange;
+    border-collapse: collapse;
+    font-family:arial, sans-serif;
+}
+
+ul{
+    list-style-type:square;
+}
+
+a{
+    text-decoration: none;
+}

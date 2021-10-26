@@ -1,0 +1,85 @@
+﻿/*
+Use Flexbox or Grid create a webpage meeting the following requirements:
+•	Header, using an image with rounded corners, rotated and casting shadow + text
+•	Gallery, located on the left, containing images with captions (use tags figure and figcaption!)
+•	Text on the right (at least 5-6 paragraphs) + images and pulled quotes. Text should be wrapped around images and pulled quotes.
+	Pulled quotes should be formatted to stand out from surrounding text.
+	Text should be divided into columns, number of columns should change dynamically depending on available space to maintain readability
+•	Footer – always at the end of the document
+•	Use semantic markup, remember about alt attributes
+•	On devices with <800 pixels width text should be displayed in a single column, gallery should be located after text
+•	(option) import two fonts, use one for headers and pulled quotes, second for main text and captions
+•	Background, colors – it is up to you
+*/
+body
+{
+	background-color:beige; 
+}
+
+h1{
+	font-size:4em;
+	font-family: sans-serif;
+}
+
+p{
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width:225px;
+}
+
+figcaption{
+	max-width: 200px;
+}
+
+.galleryImages{
+	width: 200px;
+	height: 200px;
+}
+
+.wrappedImage{
+	width:200px;
+	height: 200px;
+	float: left;
+	margin: 5px;
+}
+
+.quote{
+	float:right;
+	font-size: 1.7em;
+	font-family: "Papyrus";
+	color: red;
+}
+
+#header{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+}
+
+#logo{
+	width: 150px;
+	height:150px;
+	border-radius: 30%;
+	transform:rotate(5deg);
+	box-shadow: 10px 10px 5px grey;
+}
+
+#container{
+	display:flex;
+	flex-flow:row-reverse wrap;
+	padding: 10px;
+	justify-content: space-between;
+}
+
+#footer{
+	
+	font-size: 5em;
+}
+
+#gallery{
+	display: flex;
+	flex-flow:column nowrap;
+	margin-left: auto;
+	margin-right: auto;
+}

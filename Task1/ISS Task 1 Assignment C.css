@@ -1,0 +1,30 @@
+﻿h1{
+	text-align: center;
+}
+
+.myColumn{
+	float:left;
+	width:50%;
+}
+
+.leftParagraph{
+	clear:both;
+	background: yellow;
+}
+
+.rightParagraph{
+	background: black;
+	color: yellow;
+}
+
+.img1{
+	float:left
+}
+
+.img2{
+	float:left
+}
+
+.img3{
+	float:right
+}

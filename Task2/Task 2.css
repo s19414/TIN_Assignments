@@ -1,0 +1,31 @@
+﻿/*
+        Create a CSS stylesheet for HTML page from Assignment A. It should meet the following requirements:
+    1.	Define style and size of font for form elements
+    2.	Define colors for field labels (mandatory fields should have different color from other fields)
+
+    Forgive me God, for I have no aesthetic sense
+*/
+h1{
+  font-family:'Franklin Gothic Medium',   'Arial Narrow', Arial, sans-serif;
+  font-size: 50;
+}
+
+input{
+    font-family: arial, sans-serif;
+    font-size: 50;
+}
+
+textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:7;
+}
+
+label[for="textbox"], label[for="passwordbox"]{
+    color: red;
+    font-size: 30;
+}
+
+label[for="check1"], label[for="check2"], label[for="check3"], label[for="radio1"], label[for="radio2"], label[for="radio3"]{
+    color:green;
+    font-size: 30;
+}
