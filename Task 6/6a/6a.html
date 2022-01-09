@@ -1,0 +1,24 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="6a.js"></script>
+    <form>
+        <p>F to C</p>
+        <!--Input is a float with accuracy up to the 2nd decimal point-->
+        <input type="number" step="0.01" id="fahrenheitArg"/>
+        <input type="button" value="Calculate" onclick="calculateCelsius(document.getElementById('fahrenheitArg').value)"/>
+        <p id="FtoCAnswerSpace">result</p>
+    </form>
+    <form>
+        <p>C to F</p>
+        <!--Input is a float with accuracy up to the 2nd decimal point-->
+        <input type="number" step="0.01" id="celsiusArg"/>
+        <input type="button" value="Calculate" onclick="calculateFahrenheit(document.getElementById('celsiusArg').value)" />
+        <p id="CtoFAnswerSpace">result</p>
+    </form>
+    
+</body>
+</html>

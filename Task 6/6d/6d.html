@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add to table</title>
+    <script src="6d.js"></script>
+</head>
+<body>
+    
+    <form>
+        <label for="exponentArg">New Exponent:  </label>
+        <input type="number" id="exponentArg" />
+        <input type="button" value="Calculate" onclick="calculatePower()" />
+    </form>
+    <br />
+    <br />
+    <!--3x3 table-->
+    <table border="1" id="myTable">
+        <!--1st row-->
+        <tr id="firstRow">
+            <th>Base ><br />Exponent V</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <!--2nd row-->
+        <tr>
+            <td>2</td>
+            <td>4</td>
+            <td>8</td>
+            <td>16</td>
+        </tr>
+        <!--3rd row-->
+        <tr>
+            <td>3</td>
+            <td>8</td>
+            <td>27</td>
+            <td>64</td>
+        </tr>
+
+    </table>
+</body>
+</html>

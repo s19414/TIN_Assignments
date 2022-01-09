@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <script src="6c.js"></script>
+</head>
+<body>
+    
+    <form>
+        <label for="fullName" id="nameLabel">Full name: </label>
+        <input type="text" id="fullName" />
+        <br/><br/>
+        <label for="age" id="ageLabel">Age: </label>
+        <input type="number" id="age" min="0" max="130"/>
+        <br/><br/>
+        <label for="email" id="emailLabel">Email: </label>
+        <input type="text" id="email" />
+        <br/><br/>
+        <input type="button" value="Submit" onclick="validateForm()"/>
+    </form>
+    <p id="successIndicator"></p>
+</body>
+</html>
